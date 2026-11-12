@@ -1,1 +1,37 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about Merrimac Energy Backup, a private Home Assistant energy-data archiving utility.">
+  <title>Merrimac Energy Backup</title>
+  <style>
+    :root{color-scheme:light dark;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    body{max-width:760px;margin:0 auto;padding:48px 24px}
+    h1{font-size:clamp(2rem,5vw,3rem);letter-spacing:-.03em;line-height:1.15}
+    h2{margin-top:2rem;font-size:1.25rem}
+    p{max-width:68ch}
+    a{color:#3579d8}
+    .eyebrow{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:inherit;opacity:.7}
+    .note{border-left:3px solid #3579d8;padding-left:1rem}
+    footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #8885;font-size:.9rem}
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Private household energy archive</p>
+    <h1>Merrimac Energy Backup</h1>
+    <p>Merrimac Energy Backup is a personal utility for collecting monthly energy-analysis packets from an existing Home Assistant installation and storing backup copies in the owner's private Google Drive.</p>
+    <h2>What it does</h2>
+    <p>It packages locally backed-up electricity, HVAC, weather, and data-quality records; checks archive completeness; and uses rclone to transfer the resulting files to a designated Google Drive folder for later analysis.</p>
+    <p class="note">This is a personal-use tool. It does not offer public accounts, access to household measurements, or a hosted data-analysis service.</p>
+    <h2>Google Drive access</h2>
+    <p>To support automated uploads and reconciliation, the tool uses Google Drive OAuth authorization. The currently configured rclone integration requests full Google Drive scope, which permits reading, creating, updating and deleting Drive files. Its normal operations are configured to use a dedicated energy-archive folder; that folder setting is not an OAuth permission boundary.</p>
+    <p>Google Drive files remain in the owner's account and are not published by this site.</p>
+    <h2 id="terms">Terms of use</h2>
+    <p>This tool is for the owner's personal household records and is provided without any public service or third-party access. The owner is responsible for authorizing Drive access, maintaining local backups, and reviewing stored files.</p>
+    <p><a href="/privacy.html">Read the privacy policy</a>.</p>
+  </main>
+  <footer>© 2026 Merrimac Energy Backup · <a href="/privacy.html">Privacy policy</a> · <a href="#terms">Terms of use</a></footer>
+</body>
+</html>
