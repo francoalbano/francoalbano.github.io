@@ -1,1 +1,38 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for Merrimac Energy Backup, a personal Home Assistant Google Drive archiving utility.">
+  <title>Privacy Policy — Merrimac Energy Backup</title>
+  <style>
+    :root{color-scheme:light dark;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    body{max-width:760px;margin:0 auto;padding:48px 24px}
+    h1{font-size:clamp(2rem,5vw,2.6rem);letter-spacing:-.025em;line-height:1.15}
+    h2{margin-top:2rem;font-size:1.22rem}p{max-width:70ch}a{color:#3579d8}
+    footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #8885;font-size:.9rem}
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="/">Merrimac Energy Backup</a></p>
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective date:</strong> November 12, 2026</p>
+    <p>Merrimac Energy Backup is a personal-use utility, not a publicly offered service. This policy describes how the application uses Google account data and local household energy records.</p>
+    <h2>Data accessed</h2>
+    <p>The utility reads locally backed-up Home Assistant electricity, HVAC, weather, and quality-control records. To upload the resulting archives, rclone is authorized with Google Drive OAuth. The currently selected <code>drive</code> scope can allow reading, creating, changing, and deleting files throughout the authorized Google Drive account. The configured rclone root folder limits its normal file operations to the designated monthly energy archive but does not reduce Google's underlying OAuth permission.</p>
+    <h2>How data is used</h2>
+    <p>The utility packages monthly data files, checks completeness and checksums, uploads archives to the owner's designated Google Drive folder, and may read file metadata to verify transfers or reconcile updated packets. Google Drive authorization is used only to support those functions, not advertising or data brokerage.</p>
+    <h2>Storage and sharing</h2>
+    <p>Monthly archives are stored locally and in the owner's private Google Drive. Google OAuth credentials and tokens are held locally by rclone; Home Assistant credentials are held in the local macOS Keychain. This website does not host the household energy records, tokens, or archive contents. The utility does not intentionally share Google user data with third parties or make the archives public. Google and GitHub process data under their own applicable service policies.</p>
+    <h2>Retention and control</h2>
+    <p>The owner determines retention of the local and Google Drive copies and can delete archives at any time. Google account access can be revoked in Google Account security settings; local rclone configuration and credentials can also be removed. Revoking access stops future authorized Drive operations but does not by itself delete existing archives.</p>
+    <h2>Website data</h2>
+    <p>These static informational pages have no forms, custom analytics, or embedded tracking scripts. Standard hosting and access logs may be processed by GitHub Pages according to GitHub's policies.</p>
+    <h2>Changes</h2>
+    <p>This policy will be updated on this page if the application's data practices materially change.</p>
+    <p><a href="/">Return to the homepage</a>.</p>
+  </main>
+  <footer>© 2026 Merrimac Energy Backup · <a href="/">Homepage</a></footer>
+</body>
+</html>
